@@ -15,5 +15,5 @@ const menu = [
 
 let menuElement = document.getElementById('menu');
 menu.forEach(function(item) {
-  menuElement.innerHTML += '<div class="line ' + (item.selected ? 'selected' : '') + '"><button class="left">' + item.title + '</button><span class="duration">' + item.duration + '</span><button class="right selected">+</button></div>';
+  menuElement.innerHTML += '<div class="line' + (item.selected ? ' selected' : '') + '"><button class="left">' + item.title + '</button><span class="duration">' + item.duration + '</span><button class="right' + (item.inList ? ' selected' : '') + '">+</button></div>';
 });
